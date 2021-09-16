@@ -8,6 +8,6 @@ class CarrefourScrap(Resource):
     def post(self):
         links = request.json['links_data']
 
-        context = carr_scrap()
+        context = carr_scrap(links)
 
         return jsonify(context)
