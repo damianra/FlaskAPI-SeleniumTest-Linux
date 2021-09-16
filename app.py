@@ -7,9 +7,3 @@ app.config['SECRET_KEY'] = 'Secret_Key'
 api = Api(app, prefix="")
 
 api.add_resource(CarrefourScrap, '/scrap')
-
-
-if __name__ == '__main__':
-    # run application
-    # debug=false only in production
-    app.run(debug=True)
