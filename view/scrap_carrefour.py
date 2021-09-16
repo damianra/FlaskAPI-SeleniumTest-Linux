@@ -1,7 +1,6 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
 import os
 
 def seleniumScrap(url, browser, dic):
