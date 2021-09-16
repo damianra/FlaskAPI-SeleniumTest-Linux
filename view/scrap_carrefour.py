@@ -20,7 +20,7 @@ def carr_scrap(links):
     option = webdriver.ChromeOptions()
     # second plane browser option
     option.add_argument("headless")
-    browser = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver',options=option)
+    browser = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=option)
 
     product_price = {}
     # links = ["https://www.carrefour.com.ar/oblea-kit-kat-415-g/p", "https://www.carrefour.com.ar/limpiador-en-crema-cif-original-multiuso-500-ml/p", "https://www.carrefour.com.ar/crema-uat-liviana-vitaminas-la-serenisima-tetra-top-200-cc/p", "https://www.carrefour.com.ar/papas-fritas-mc-cain-tradicional-400-g/p"]
